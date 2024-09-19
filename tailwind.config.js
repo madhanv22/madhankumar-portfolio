@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'hero-font':'Sriracha'
+    }
   },
   plugins: [],
 }

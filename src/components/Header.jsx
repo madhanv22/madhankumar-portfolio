@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <header className="flex sm:flex-row justify-between px-5 py-3 bg-primary w-full">
-    <a className="font-bold text-black mb-2 sm:mb-0" href="#">Madhan</a>
+    <a className="font-bold text-black mb-2 sm:mb-0 font-hero-font text-2xl text-emerald-400" href="#">Madhan</a>
 
     {/* header */}
     <nav className='hidden md:block'>

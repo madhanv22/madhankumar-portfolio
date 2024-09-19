@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,10 +12,18 @@ header ul li {
   background: rgb(85, 81, 227);
 }
 
+.bg-secondary {
+  background: #2b2d77;
+}
+
 .mobile-nav {
   @apply fixed top-14 left-0 h-1/3 w-full bg-gray-700;
 }
 
 .mobile-nav li {
   @apply w-full h-full text-center border-b-2;
+}
+
+.hero-img {
+  @apply rounded-full;
 }
