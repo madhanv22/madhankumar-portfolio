@@ -5,10 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      borderColor: {
+        'primary' : 'rgb(48, 25, 180)'
+      }
+    },
     fontFamily: {
       'hero-font':'Sriracha'
-    }
+    },
   },
   plugins: [],
 }

@@ -8,12 +8,16 @@ header ul li {
   @apply px-2;
 }
 
+.header-bg-secondary {
+  background:rgb(48, 25, 180);
+}
+
 .bg-primary {
-  background: rgb(85, 81, 227);
+  background:#3B0F6B;
 }
 
 .bg-secondary {
-  background: #2b2d77;
+  background:#8A2BE2;
 }
 
 .mobile-nav {
@@ -26,4 +30,8 @@ header ul li {
 
 .hero-img {
   @apply rounded-full;
+}
+
+.about-img {
+  @apply rounded-full object-cover;
 }
