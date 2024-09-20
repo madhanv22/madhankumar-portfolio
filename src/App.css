@@ -21,7 +21,7 @@ header ul li {
 }
 
 .mobile-nav {
-  @apply fixed top-14 left-0 h-1/3 w-full bg-gray-700;
+  @apply fixed top-14 left-0 h-1/2 w-full bg-gray-900;
 }
 
 .mobile-nav li {
@@ -42,4 +42,8 @@ header ul li {
 
 .btn {
   @apply  bg-secondary px-4 py-2 cursor-pointer hover:border-2 border-white border-dotted rounded font-bold;
+}
+
+html {
+  scroll-behavior: smooth;
 }

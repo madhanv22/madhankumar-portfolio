@@ -13,27 +13,27 @@ const Header = () => {
     {/* header */}
     <nav className='hidden md:block'>
       <ul className="flex flex-wrap justify-center sm:justify-end text-white space-x-4 w-full sm:w-auto">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Experience</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Resume</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#experience">Experience</a></li>
+        <li><a href="/#skills">Skills</a></li>
+        <li><a href="/#projects">Projects</a></li>
+        <li><a href="/#resume">Resume</a></li>
+        <li><a href="/#contact">Contact</a></li>
       </ul>
     </nav>
 
     {/* Navbar */}
     {toggleMenu && (
       <nav className='md:hidden'>
-        <ul className="flex flex-col text-white mobile-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Experience</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Resume</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul onClick={() => setToggleMenu(!toggleMenu)} className="flex flex-col text-white mobile-nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#experience">Experience</a></li>
+          <li><a href="/#skills">Skills</a></li>
+          <li><a href="/#projects">Projects</a></li>
+          <li><a href="/#resume">Resume</a></li>
+          <li><a href="/#contact">Contact</a></li>
         </ul>
       </nav>
     )}
