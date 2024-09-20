@@ -1,10 +1,10 @@
 import React from 'react'
-import AboutImg from '../assets/about.avif'
+import AboutImg from '../assets/about.png'
 
 const About = () => {
   return (
     <section className='flex flex-col md:flex-row  bg-primary px-5'>
-      <div className='md:w-1/2 py-5'>
+      <div className='flex md:w-1/2 py-5'>
         <img className='about-img' src={AboutImg} />
       </div>
       <div className='md:w-1/2 flex justify-center'>

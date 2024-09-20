@@ -35,3 +35,7 @@ header ul li {
 .about-img {
   @apply rounded-full object-cover;
 }
+
+.project-desc {
+  @apply absolute left-0 right-0 bottom-0 top-0 bg-primary opacity-0 duration-1000 hover:opacity-100;
+}
