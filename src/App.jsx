@@ -13,13 +13,13 @@ function App() {
   return (
     <div className='App'>
       <Header />
-      <section id="hero"><Hero /></section>
-      <section id="about"><About /></section>
-      <section id="experience"><Experience /></section>
-      <section id="skills"><Skills /></section>
-      <section id="projects"><Projects /></section>
-      <section id="resume"><Resume /></section>
-      <section id="contact"><Contact /></section>
+      <Hero />
+      <About />
+      <Experience />
+      <Skills />
+      <Projects />
+      <Resume />
+      <Contact />
       <Footer />
     </div>
   )
