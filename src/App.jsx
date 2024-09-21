@@ -12,7 +12,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <Router>
+    <Router basename="/madhanv22.github.io/madhankumar-protfolio">
       <div className='App'>
         <Header />
         <Routes>
