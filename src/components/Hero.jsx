@@ -17,8 +17,9 @@ const Hero = () => {
           Hi, <br/> 
           I'm 
           <span className='text-emerald-400'> Madhankumar.v</span>
-          <p className='text-4xl text-emerald-400'>
+          <p className='text-4xl text-yellow-500'>
             {config.subtitle}
+            <span className='text-white'></span>
           </p>
           <p className='text-2xl'>View my 
             <span className='text-black'> Projects </span> & 

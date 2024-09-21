@@ -44,6 +44,10 @@ header ul li {
   @apply  bg-secondary px-4 py-2 cursor-pointer hover:border-2 border-white border-dotted rounded font-bold;
 }
 
+.experience-heading {
+  @apply text-4xl border-b-4 w-[160px] border-primary cursor-pointer mb-5
+}
+
 html {
   scroll-behavior: smooth;
 }
