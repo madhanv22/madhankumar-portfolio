@@ -27,30 +27,32 @@ const Projects = () => {
   };
 
   return (
-    <section className='flex flex-col py-20 px-4 justify-center bg-secondary text-white' id='projects'>
+    <section className='flex flex-col py-10 px-4 justify-center bg-secondary text-white cursor-auto' id='projects'>
       <div className='w-full'>
         <div className='flex px-6 flex-col'>
-          <h1 className='text-4xl border-b-4 border-primary w-[140px] mb-5'>Projects</h1>
+          <h1 className='text-4xl border-b-4 border-primary w-[140px] mb-5 cursor-pointer'>Projects</h1>
           <p className='pb-4'>These are one of my best projects, I have built these with React, Tailwind CSS, Vanilla CSS. Check them out</p>
         </div>
       </div>
 
       <div className='w-full flex flex-col md:flex-row md:flex-wrap justify-center md:justify-between px-5'>
         {config.projects.map((project, index) => (
-          <a key={index} href={project.link} className='w-full md:w-[30%] lg:w-[30%] relative p-3'>
-            <div>
-              <img className='w-full h-auto object-cover' src={project.image} alt={`Project Image ${index + 1}`} />
-              <div className='project-desc'>
-                <p className='text-center px-4 py-4'>
-                  {project.description}
-                </p>
-                <div className='flex justify-center gap-2'>
+          <div key={index} href={project.link} className='w-full md:w-[30%] lg:w-[30%] relative p-3'>
+            <img className='w-full h-auto object-cover' src={project.image} alt={`Project Image ${index + 1}`} />
+            <div className='project-desc'>
+              <p className='text-center px-4 py-4'>
+                {project.description}
+              </p>
+              <div className='flex justify-center gap-2'>
+                {project.SourceLink && (
                   <a className='btn' target='_blank' rel='noopener noreferrer' href={project.SourceLink}>Source Code</a>
+                )}
+                {project.link && (
                   <a className='btn' target='_blank' rel='noopener noreferrer' href={project.link}>Live Demo</a>
-                </div>
+                )}
               </div>
             </div>
-          </a>
+          </div>
         ))}
       </div>
     </section>

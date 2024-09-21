@@ -14,7 +14,7 @@ const Resume = () => {
       </div>
       <div className='md:w-1/2 flex justify-center'>
         <div className='flex flex-col justify-center text-white'>
-          <h1 className='text-4xl border-b-4 border-primary w-[140px] mb-5'>Resume</h1>
+          <h1 className='text-4xl border-b-4 border-primary w-[140px] mb-5 cursor-pointer'>Resume</h1>
           <p className='p-2'>You can view my resume  
           <a href='' type='button'>
             <button className='btn'>Download</button></a>

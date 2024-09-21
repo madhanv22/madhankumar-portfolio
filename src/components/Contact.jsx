@@ -6,14 +6,14 @@ const Contact = () => {
 
   const config = {
     email : ' mailto:madhanv263@gmail.com?subject=Hello&body=Hi%20there,%0A%0AHow%20are%20you?',
-    whatsapp : 'mailto:madhanv263@gmail.com?subject=Hello&body=Hi%20there,%0A%0AHow%20are%20you?',
+    whatsapp : 'https://wa.me/919894356749',
     linkedIn : 'https://www.linkedin.com/in/madhankumarv24/'
   }
 
   return (
     <section className='flex flex-col bg-secondary px-5' id='contact'>
-      <div className='flex flex-col items-center text-white p-20'>
-        <h1 className='text-4xl border-b-4 border-primary w-[140px] mb-5'>Contact</h1>
+      <div className='flex flex-col items-center text-white p-10'>
+        <h1 className='text-4xl border-b-4 border-primary w-[140px] mb-5 cursor-pointer'>Contact</h1>
         <p className='pb-5'>You want to discuss more in detail, Please contact me.</p>
        <div className='flex flex-col md:flex-row gap-2'>
           <div className='hover:text-black flex items-center'>

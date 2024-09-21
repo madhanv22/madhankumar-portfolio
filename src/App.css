@@ -44,8 +44,25 @@ header ul li {
   @apply  bg-secondary px-4 py-2 cursor-pointer hover:border-2 border-white border-dotted rounded font-bold;
 }
 
-.experience-heading {
-  @apply text-4xl border-b-4 w-[160px] border-primary cursor-pointer mb-5
+.section-heading {
+  @apply text-4xl border-b-4 w-[150px] border-primary cursor-pointer mb-5
+}
+
+@keyframes beat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.animate-beat {
+  animation: beat 1s infinite;
+}
+
+.skill-list {
+  @apply text-center rounded-full p-2 bg-gradient-to-r bg-green-200 text-gray-800 font-bold
 }
 
 html {

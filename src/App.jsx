@@ -7,6 +7,7 @@ import Resume from './components/Resume'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Experience from './components/Experience'
+import Skills from './components/Skills'
 
 function App() {
   
@@ -16,6 +17,7 @@ function App() {
       <Hero />
       <About />
       <Experience />
+      <Skills />
       <Projects />
       <Resume />
       <Contact />

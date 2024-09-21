@@ -7,7 +7,7 @@ const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
 
   return (
-    <header className="flex sm:flex-row justify-between px-5 py-3 header-bg-secondary w-full">
+    <header className="flex sm:flex-row justify-between px-5 py-3 header-bg-secondary w-full fixed top-0 left-0 z-50">
     <a className="font-bold text-black mb-2 sm:mb-0 font-hero-font text-2xl" href="#">Madhan</a>
     
     {/* header */}
@@ -16,7 +16,7 @@ const Header = () => {
         <li><a href="/">Home</a></li>
         <li><a href="/#about">About</a></li>
         <li><a href="/#experience">Experience</a></li>
-        <li><a href="/#skills">Skills</a></li>
+        <li><a href="/#skillsec">Skills</a></li>
         <li><a href="/#projects">Projects</a></li>
         <li><a href="/#resume">Resume</a></li>
         <li><a href="/#contact">Contact</a></li>
@@ -30,7 +30,7 @@ const Header = () => {
           <li><a href="/">Home</a></li>
           <li><a href="/#about">About</a></li>
           <li><a href="/#experience">Experience</a></li>
-          <li><a href="/#skills">Skills</a></li>
+          <li><a href="/#skillsec">Skills</a></li>
           <li><a href="/#projects">Projects</a></li>
           <li><a href="/#resume">Resume</a></li>
           <li><a href="/#contact">Contact</a></li>

@@ -13,7 +13,7 @@ const Hero = () => {
   return (
     <section className='flex flex-col md:flex-row px-5 py-28 bg-secondary justify-center'>
       <div className='w-full md:w-1/2 flex flex-col justify-center'>
-        <h1 className='text-white text-4xl md:text-6xl font-hero-font'>
+        <h1 className='text-white text-4xl md:text-6xl font-hero-font cursor-pointer'>
           Hi, <br/> 
           I'm 
           <span className='text-emerald-400'> Madhankumar.v</span>
