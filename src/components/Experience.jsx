@@ -23,26 +23,27 @@ const Experience = () => {
   const highlights = ['React', 'JavaScript', 'personal portfolio', 'income and expense management application']
 
   return (
-    <section className='flex flex-col text-white bg-secondary px-10 py-5 space-y-5' id='experience'>
+    <section className='flex flex-col text-white bg-secondary px-10 py-5 space-y-5 min-h-screen pt-20 pb-10' id='experience'>
       <div>
         <h1 className='section-heading'>Experience</h1>
       </div>
       <div className='flex flex-col md:flex-row md:space-x-5 space-y-5 md:space-y-0'>
         <div className='md:w-1/2'>
-          <h1 className='text-3xl text-emerald-400'>What I Learned</h1>
+          <h1 className='text-3xl text-emerald-400 mb-2'>What I Learned</h1>
           <p className='text-xl'>
             {highlightText(config.learned, highlights)}
           </p>
         </div>
         <div className='md:w-1/2'>
-          <h1 className='text-3xl text-emerald-400'>What I Did</h1>
+          <h1 className='text-3xl text-emerald-400 mb-2'>What I Did</h1>
           <p className='text-xl'>
             {highlightText(config.whatIdid, highlights)}
           </p>
         </div>
       </div>
     </section>
+
   )
 }
 
-export default Experience
+export default Experience;

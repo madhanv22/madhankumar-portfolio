@@ -9,10 +9,10 @@ const Contact = () => {
   };
 
   return (
-    <section className='flex flex-col bg-secondary px-5' id='contact'>
+    <section className='flex flex-col bg-secondary px-5 min-h-screen pt-24 pb-24' id='contact'>
       <div className='flex flex-col items-center text-white p-10'>
         <h1 className='text-4xl border-b-4 border-primary w-[140px] mb-5 cursor-pointer'>Contact</h1>
-        <p className='pb-5'>You want to discuss more in detail, Please contact me.</p>
+        <p className='pb-5'>You want to discuss more in detail, please contact me.</p>
         <div className='flex flex-col md:flex-row gap-2'>
           <div className='hover:text-black flex items-center'>
             <a href={config.email} className='flex items-center'>
@@ -32,7 +32,7 @@ const Contact = () => {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Contact
+export default Contact;

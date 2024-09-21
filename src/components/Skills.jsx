@@ -15,13 +15,11 @@ const Skills = () => {
   }
 
   return (
-    <section className='flex flex-col py-10 px-4
-    justify-center bg-primary text-white' id='skillsec'>
+    <section className='flex sm:flex-col py-10 px-4 justify-center bg-primary text-white min-h-screen pt-20 pb-16' id='skills'>
       <div className='flex px-6 flex-col'>
-        <h1 className=' text-4xl border-b-4 w-[90px] border-primary cursor-pointer mb-5'>Skills
-        </h1>
+        <h1 className='text-4xl border-b-4 w-[90px] border-primary cursor-pointer mb-5'>Skills</h1>
         <div className='p-4 flex justify-around'>
-          <ul className='flex flex-col md:flex-row gap-4'>
+          <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
             {config.skills.map((skill, index) => (
               <li key={index} className='skill-list animate-beat'>
                 {skill}
@@ -34,4 +32,4 @@ const Skills = () => {
   )
 }
 
-export default Skills
+export default Skills;

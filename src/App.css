@@ -32,6 +32,10 @@ header ul li {
   @apply rounded-full;
 }
 
+.header-section {
+  @apply flex sm:flex-row justify-between px-5 py-3 header-bg-secondary w-full z-50; 
+}
+
 .about-img {
   @apply rounded-full object-cover;
 }

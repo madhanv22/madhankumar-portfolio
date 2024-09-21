@@ -7,13 +7,18 @@ export default {
   theme: {
     extend: {
       borderColor: {
-        'primary' : 'rgb(48, 25, 180)'
-      }
+        'primary': 'rgb(48, 25, 180)',
+      },
+      minHeight: {
+        'screen': '100vh',
+      },
+      spacing: {
+        '15': '60px',
+      },
     },
     fontFamily: {
-      'hero-font':'Sriracha'
+      'hero-font': 'Sriracha',
     },
   },
   plugins: [],
 }
-

@@ -4,17 +4,20 @@ import { AiOutlineGithub, AiOutlineInstagram, AiOutlineLinkedin } from "react-ic
 
 const Hero = () => {
   const config = {
-    subtitle : 'Frontend Developer',
-    github : 'https://github.com/madhanv22',
-    instagram : 'https://www.instagram.com/madhan_kumar.__/?igsh=M3ZrN3ltMjJmemRt',
-    linkedIn : 'https://www.linkedin.com/in/madhankumarv24/',
+    subtitle: 'Frontend Developer',
+    github: 'https://github.com/madhanv22',
+    instagram: 'https://www.instagram.com/madhan_kumar.__/?igsh=M3ZrN3ltMjJmemRt',
+    linkedIn: 'https://www.linkedin.com/in/madhankumarv24/',
   }
 
   return (
-    <section className='flex flex-col md:flex-row px-5 py-28 bg-secondary justify-center'>
+    <section className='flex flex-col md:flex-row px-5 py-10 bg-secondary min-h-screen pt-20 pb-16 justify-center z-0'>
       <div className='w-full md:w-1/2 flex flex-col justify-center'>
+        <div className='text-4xl border-b-4 text-white cursor-pointer border-primary w-[160px] ms-0 mb-5'>
+          <h1 className=''>Home</h1>
+        </div>
         <h1 className='text-white text-4xl md:text-6xl font-hero-font cursor-pointer'>
-          Hi, <br/> 
+          Hi, <br />
           I'm 
           <span className='text-emerald-400'> Madhankumar.v</span>
           <p className='text-4xl text-yellow-500'>
@@ -33,10 +36,9 @@ const Hero = () => {
           <a href={config.linkedIn} className='pr-5 hover:text-white'><AiOutlineLinkedin size={40} /></a>
         </div>
       </div>
-      <img className='md:w-1/3 hero-img' src={HeroImg} />
+      <img className='md:w-1/3 w-1/2 hero-img' src={HeroImg} />
     </section>
-
   )
 }
 
-export default Hero
+export default Hero;
