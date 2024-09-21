@@ -15,10 +15,13 @@ export default {
       spacing: {
         '15': '60px',
       },
-    },
-    fontFamily: {
-      'hero-font': 'Sriracha',
+      fontFamily: {
+        'hero-font': ['Sriracha', 'cursive'], 
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'), 
+    require('@tailwindcss/typography'), 
+  ],
 }

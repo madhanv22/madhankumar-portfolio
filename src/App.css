@@ -8,6 +8,10 @@ header ul li {
   @apply px-2;
 }
 
+body {
+  font-family: 'Sriracha', cursive;
+}
+
 .header-bg-secondary {
   background:rgb(48, 25, 180);
 }
