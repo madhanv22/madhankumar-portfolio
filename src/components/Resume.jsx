@@ -16,7 +16,7 @@ const Resume = () => {
         <div className='flex flex-col justify-center text-white text-center'>
           <h1 className='text-4xl border-b-4 border-primary w-[140px] mb-5 cursor-pointer'>Resume</h1>
           <p className='p-2'>You can view and download my resume  
-            <a href={config.resume} download className='btn m-4'>Download</a>
+            <a href={config.resume} download="madhankumar.resume" className='btn m-4 md:m-4'>Download</a>
           </p>
         </div>
       </div>
