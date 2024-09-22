@@ -8,8 +8,8 @@ const Projects = () => {
       {
         image: projectImg1,
         description: 'I developed a responsive Personal Portfolio website using React.js, Tailwind CSS, and JavaScript.',
-        link: '',
-        SourceLink: ''
+        link: 'https://madhanv22.github.io/madhankumar-protfolio/',
+        SourceLink: 'https://github.com/madhanv22/madhankumar-protfolio'
       },
       {
         image: projectImg2,
