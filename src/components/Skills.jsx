@@ -15,7 +15,7 @@ const Skills = () => {
   }
 
   return (
-    <section className='flex sm:flex-col py-10 px-4 justify-center bg-primary text-white min-h-screen pt-20 pb-16' id='skills'>
+    <section className='skills-section' id='skills'>
       <div className='flex px-6 flex-col'>
         <h1 className='text-4xl border-b-4 w-[90px] border-primary cursor-pointer mb-5'>Skills</h1>
         <div className='p-4 flex justify-around'>

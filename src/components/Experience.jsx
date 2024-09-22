@@ -23,7 +23,7 @@ const Experience = () => {
   const highlights = ['React', 'JavaScript', 'personal portfolio', 'income and expense management application']
 
   return (
-    <section className='flex flex-col text-white bg-secondary px-10 py-5 space-y-5 min-h-screen pt-20 pb-10' id='experience'>
+    <section className='experience-section' id='experience'>
       <div>
         <h1 className='section-heading'>Experience</h1>
       </div>

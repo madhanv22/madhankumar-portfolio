@@ -73,6 +73,38 @@ body {
   @apply text-center rounded-full p-2 bg-gradient-to-r bg-green-200 text-gray-800 font-bold
 }
 
+.scrollable {
+  @apply overflow-y-auto; 
+}
+
+.hero-section {
+  @apply flex flex-col md:justify-center md:items-center lg:flex-row px-5 py-10 bg-secondary min-h-screen pt-20 pb-16 justify-center z-0 scrollable
+}
+
+.about-section {
+  @apply flex flex-col lg:flex-row  md:justify-center md:items-center bg-primary px-5 min-h-screen pt-20 pb-16 gap-4 scrollable
+}
+
+.experience-section {
+  @apply flex flex-col text-white bg-secondary px-10 py-5 space-y-5 min-h-screen pt-20 pb-10 scrollable
+}
+
+.skills-section {
+  @apply flex sm:flex-col py-10 px-4 justify-center bg-primary text-white min-h-screen pt-20 pb-16 scrollable
+}
+
+.projects-section {
+  @apply flex flex-col py-10 px-4 bg-secondary text-white cursor-auto min-h-screen pt-20 pb-16 scrollable
+}
+
+.resume-section {
+  @apply flex flex-col md:flex-row bg-primary px-5 min-h-screen pt-24 pb-24 scrollable
+}
+
+.contact-section {
+  @apply flex flex-col bg-secondary px-5 min-h-screen pt-24 pb-24
+}
+
 html {
   scroll-behavior: smooth;
 }

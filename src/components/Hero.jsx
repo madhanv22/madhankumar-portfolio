@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import HeroImg from '../assets/hero.png';
 import { AiOutlineGithub, AiOutlineInstagram, AiOutlineLinkedin } from "react-icons/ai";
 
@@ -11,7 +11,7 @@ const Hero = () => {
   }
 
   return (
-    <section className='flex flex-col md:flex-row px-5 py-10 bg-secondary min-h-screen pt-20 pb-16 justify-center z-0' id='hero'>
+    <section className='hero-section' id='hero'>
       <div className='w-full md:w-1/2 flex flex-col justify-center'>
         <div className='text-4xl border-b-4 text-white cursor-pointer border-primary w-[160px] ms-0 mb-5'>
           <h1 className=''>Home</h1>
@@ -36,7 +36,7 @@ const Hero = () => {
           <a href={config.linkedIn} className='pr-5 hover:text-white'><AiOutlineLinkedin size={40} /></a>
         </div>
       </div>
-      <img className='md:w-1/3 w-1/2 hero-img' src={HeroImg} />
+      <img className='md:w-1/3 w-full hero-img' src={HeroImg} />
     </section>
   )
 }

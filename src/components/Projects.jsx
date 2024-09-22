@@ -27,7 +27,7 @@ const Projects = () => {
   };
 
   return (
-    <section className='flex flex-col py-10 px-4 bg-secondary text-white cursor-auto min-h-screen pt-20 pb-16' id='projects'>
+    <section className='projects-section' id='projects'>
       <div className='w-full'>
         <div className='flex px-6 flex-col'>
           <h1 className='text-4xl border-b-4 border-primary w-[140px] mb-5 cursor-pointer'>Projects</h1>

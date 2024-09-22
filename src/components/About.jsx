@@ -1,5 +1,5 @@
-import React from 'react'
-import AboutImg from '../assets/about.png'
+import React from 'react';
+import AboutImg from '../assets/about.png';
 
 const About = () => {
 
@@ -11,8 +11,8 @@ const About = () => {
   }
 
   return (
-    <section className='flex flex-col md:flex-row bg-primary px-5 min-h-screen pt-20 pb-16 gap-4' id='about'>
-      <div className='flex md:w-1/2 w-1/2 py-5'>
+    <section className='about-section' id='about'>
+      <div className='flex md:w-1/2 w-full py-5'>
         <img className='about-img' src={AboutImg} />
       </div>
       <div className='md:w-1/2 flex justify-center'>

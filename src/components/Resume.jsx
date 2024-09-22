@@ -7,7 +7,7 @@ const Resume = () => {
   };
 
   return (
-    <section className='flex flex-col md:flex-row bg-primary px-5 min-h-screen pt-24 pb-24' id='resume'>
+    <section className='resume-section' id='resume'>
       <div className='flex md:w-1/2 py-5 justify-center items-center'>
         <img className='w-2/3 md:w-1/2 lg:w-1/3 h-auto lg:max-h-100' src={ResumeImg} alt="Resume" />
       </div>
