@@ -1,9 +1,10 @@
 import React from 'react';
 import ResumeImg from '../assets/Resume.png';
+import ResumePDF from '../assets/madhankumar.resume.pdf';
 
 const Resume = () => {
   const config = {
-    resume: '',
+    resume: ResumePDF,
   };
 
   return (
@@ -15,9 +16,7 @@ const Resume = () => {
         <div className='flex flex-col justify-center text-white text-center'>
           <h1 className='text-4xl border-b-4 border-primary w-[140px] mb-5 cursor-pointer'>Resume</h1>
           <p className='p-2'>You can view and download my resume  
-            <a href={config.resume} type='button'>
-              <button className='btn'>Download</button>
-            </a>
+            <a href={config.resume} download className='btn m-4'>Download</a>
           </p>
         </div>
       </div>
