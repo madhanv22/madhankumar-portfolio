@@ -11,7 +11,7 @@ const Hero = () => {
   }
 
   return (
-    <section className='flex flex-col md:flex-row px-5 py-10 bg-secondary min-h-screen pt-20 pb-16 justify-center z-0'>
+    <section className='flex flex-col md:flex-row px-5 py-10 bg-secondary min-h-screen pt-20 pb-16 justify-center z-0' id='hero'>
       <div className='w-full md:w-1/2 flex flex-col justify-center'>
         <div className='text-4xl border-b-4 text-white cursor-pointer border-primary w-[160px] ms-0 mb-5'>
           <h1 className=''>Home</h1>

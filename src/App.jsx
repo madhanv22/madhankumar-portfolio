@@ -8,15 +8,15 @@ import Projects from './components/Projects'
 import Resume from './components/Resume'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <Router basename="/madhanv22.github.io/madhankumar-protfolio">
+    <Router>
       <div className='App'>
         <Header />
         <Routes>
-          <Route path="/home" element={<Hero />} />
+          <Route path="/" element={<Hero />} />
           <Route path="/about" element={<About />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/skills" element={<Skills />} />

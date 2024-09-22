@@ -11,7 +11,7 @@ const Header = () => {
       <a className="font-bold text-black mb-2 sm:mb-0 font-hero-font text-2xl" href="#">Madhan</a>
       <nav className='hidden md:block'>
         <ul className="flex flex-wrap justify-center sm:justify-end text-white space-x-4 w-full sm:w-auto">
-          <li><Link to="/home">Home</Link></li>
+          <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/experience">Experience</Link></li>
           <li><Link to="/skills">Skills</Link></li>
@@ -23,7 +23,7 @@ const Header = () => {
       {toggleMenu && (
         <nav className='md:hidden z-50'>
           <ul onClick={() => setToggleMenu(!toggleMenu)} className="flex flex-col text-white mobile-nav">
-            <li><Link to="/home">Home</Link></li>
+            <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/experience">Experience</Link></li>
             <li><Link to="/skills">Skills</Link></li>
