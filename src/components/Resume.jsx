@@ -1,6 +1,6 @@
 import React from 'react';
 import ResumeImg from '../assets/Resume.png';
-import ResumePDF from ../assets/madhankumar.resume.pdf';
+import ResumePDF from '../assets/madhankumar.resume.pdf';
 
 const Resume = () => {
   const config = {
