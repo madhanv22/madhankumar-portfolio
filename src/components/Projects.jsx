@@ -2,6 +2,8 @@ import projectImg1 from '../assets/project1.png';
 import projectImg2 from '../assets/project2.png';
 import projectImg3 from '../assets/project3.png';
 import projectImg4 from '../assets/project4.png';
+import projectImg5 from '../assets/project5.png';
+import projectImg6 from '../assets/project6.png';
 
 const Projects = () => {
   const config = {
@@ -29,7 +31,19 @@ const Projects = () => {
         description: 'I created a Github Dashboard application using React.js',
         link: 'https://madhanv22.github.io/github-dashboard/',
         SourceLink: 'https://github.com/madhanv22/github-dashboard'
-      }
+      },
+      {
+        image: projectImg5,
+        description: 'I created a Youtube Clone using HTML and CSS',
+        link: 'https://madhanv22.github.io/youtube-clone/',
+        SourceLink: 'https://github.com/madhanv22/youtube-clone'
+      },
+      {
+        image: projectImg6,
+        description: 'I created a User SignUp & Login Page using HTML and CSS and Javascript',
+        link: 'https://madhanv22.github.io/signup-login/',
+        SourceLink: 'https://github.com/madhanv22/signup-login'
+      },
     ]
   };
 
