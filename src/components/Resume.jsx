@@ -1,5 +1,5 @@
 import React from 'react';
-import ResumeImg from '../assets/Resume.png';
+import ResumeImg from '../assets/resume.png';
 import ResumePDF from '../assets/madhan.resume.pdf';
 
 const Resume = () => {
