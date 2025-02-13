@@ -1,6 +1,7 @@
 import projectImg1 from '../assets/project1.png';
 import projectImg2 from '../assets/project2.png';
 import projectImg3 from '../assets/project3.png';
+import projectImg4 from '../assets/project4.png';
 
 const Projects = () => {
   const config = {
@@ -22,6 +23,12 @@ const Projects = () => {
         description: 'I created a responsive To-Do List application using React.js, JavaScript, and CSS.',
         link: 'https://madhanv22.github.io/react-todo-list/',
         SourceLink: 'https://github.com/madhanv22/react-todo-list'
+      },
+      {
+        image: projectImg4,
+        description: 'I created a Github Dashboard application using React.js',
+        link: 'https://madhanv22.github.io/github-dashboard/',
+        SourceLink: 'https://github.com/madhanv22/github-dashboard'
       }
     ]
   };
