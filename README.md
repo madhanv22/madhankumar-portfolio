@@ -27,7 +27,7 @@ Welcome to my personal portfolio! This project showcases my skills, projects, an
 
 ## Getting Started
 
-clone the repository using the command `git clone https://github.com/madhanv22/madhankumar-protfolio`. 
+clone the repository using the command `git clone https://github.com/madhanv22/madhankumar-portfolio`. 
 
 install the necessary dependencies by running `npm install`. 
 
@@ -37,5 +37,5 @@ When you're ready to build for production, execute `npm run build`.
 
 Finally, you can preview the production build with `npm run preview`.
 
-Visit my portfolio at this link: [My Portfolio](https://madhanv22.github.io/madhankumar-protfolio/).
+Visit my portfolio at this link: [My Portfolio](https://madhanv22.github.io/madhankumar-portfolio/).
 
