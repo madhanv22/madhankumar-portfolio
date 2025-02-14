@@ -1,14 +1,29 @@
 import React from 'react';
 import ResumeImg from '../assets/resume.png';
 import ResumePDF from '../assets/madhan.resume.pdf';
+import Confetti from 'react-confetti';
+import { useWindowSize } from 'react-use';
+import { useState, useEffect } from 'react';
 
 const Resume = () => {
   const config = {
     resume: ResumePDF,
   };
 
+  const [isConfettiVisible, setIsConfettiVisible] = useState(true);
+  const { width, height } = useWindowSize();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsConfettiVisible(false);
+    }, 6000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <section className='resume-section' id='resume'>
+      {isConfettiVisible && <Confetti width={width} height={height} numberOfPieces={400} />}
       <div className='flex md:w-1/2 py-5 justify-center items-center'>
         <img className='w-2/3 md:w-1/2 lg:w-1/3 h-auto lg:max-h-100' src={ResumeImg} alt="Resume" />
       </div>

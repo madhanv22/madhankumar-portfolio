@@ -1,4 +1,7 @@
 import React from 'react'
+import Confetti from 'react-confetti';
+import { useWindowSize } from 'react-use';
+import { useState, useEffect } from 'react';
 
 const Experience = () => {
 
@@ -6,6 +9,17 @@ const Experience = () => {
     learned: ' As a self-taught developer, I learned how to build products from scratch, troubleshooting issues to ensure smooth functionality. I gained a strong understanding of front-end technologies like React and JavaScript, which helped me create dynamic websites. I also improved my time management by setting goals and meeting self-imposed deadlines. Through these experiences, I enhanced my ability to design user interfaces, implement key features, and ensure that the applications run efficiently.',
     whatIdid: ' As a self-taught developer, I created two dynamic websites. One is my personal portfolio built using React, and the other is an income and expense management application developed in JavaScript. I designed the user interfaces, implemented features, and ensured the overall functionality and performance of these projects.'
   }
+
+  const [isConfettiVisible, setIsConfettiVisible] = useState(true);
+  const { width, height } = useWindowSize();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsConfettiVisible(false);
+    }, 6000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const highlightText = (text, highlights) => {
     const parts = text.split(new RegExp(`(${highlights.join('|')})`, 'gi'))
@@ -24,6 +38,7 @@ const Experience = () => {
 
   return (
     <section className='experience-section' id='experience'>
+       {isConfettiVisible && <Confetti width={width} height={height} numberOfPieces={300} />}
       <div>
         <h1 className='section-heading'>Experience</h1>
       </div>

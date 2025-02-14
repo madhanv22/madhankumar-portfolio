@@ -1,6 +1,9 @@
 import React from 'react';
 import HeroImg from '../assets/hero.png';
 import { AiOutlineGithub, AiOutlineInstagram, AiOutlineLinkedin } from "react-icons/ai";
+import Confetti from 'react-confetti';
+import { useWindowSize } from 'react-use';
+import { useState, useEffect } from 'react';
 
 const Hero = () => {
   const config = {
@@ -10,8 +13,20 @@ const Hero = () => {
     linkedIn: 'https://www.linkedin.com/in/madhankumarv24/',
   }
 
+  const [isConfettiVisible, setIsConfettiVisible] = useState(true);
+  const { width, height } = useWindowSize();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsConfettiVisible(false);
+    }, 6000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <section className='hero-section' id='hero'>
+      {isConfettiVisible && <Confetti width={width} height={height} numberOfPieces={300} />}
       <div className='w-full md:w-1/2 flex flex-col justify-center'>
         <div className='text-4xl border-b-4 text-white cursor-pointer border-primary w-[160px] ms-0 mb-5'>
           <h1 className=''>Home</h1>

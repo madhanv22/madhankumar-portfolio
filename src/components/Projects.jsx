@@ -4,6 +4,9 @@ import projectImg3 from '../assets/project3.png';
 import projectImg4 from '../assets/project4.png';
 import projectImg5 from '../assets/project5.png';
 import projectImg6 from '../assets/project6.png';
+import Confetti from 'react-confetti';
+import { useWindowSize } from 'react-use';
+import { useState, useEffect } from 'react';
 
 const Projects = () => {
   const config = {
@@ -47,8 +50,21 @@ const Projects = () => {
     ]
   };
 
+  
+  const [isConfettiVisible, setIsConfettiVisible] = useState(true);
+  const { width, height } = useWindowSize();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsConfettiVisible(false);
+    }, 6000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <section className='projects-section' id='projects'>
+      {isConfettiVisible && <Confetti width={width} height={height} numberOfPieces={400} />}
       <div className='w-full'>
         <div className='flex px-6 flex-col'>
           <h1 className='text-4xl border-b-4 border-primary w-[140px] mb-5 cursor-pointer'>Projects</h1>

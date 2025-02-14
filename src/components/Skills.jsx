@@ -1,4 +1,7 @@
 import React from 'react'
+import Confetti from 'react-confetti';
+import { useWindowSize } from 'react-use';
+import { useState, useEffect } from 'react';
 
 const Skills = () => {
 
@@ -14,8 +17,21 @@ const Skills = () => {
     ]
   }
 
+  const [isConfettiVisible, setIsConfettiVisible] = useState(true);
+  const { width, height } = useWindowSize();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsConfettiVisible(false);
+    }, 6000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+
   return (
     <section className='skills-section' id='skills'>
+      {isConfettiVisible && <Confetti width={width} height={height} numberOfPieces={400} />}
       <div className='flex px-6 flex-col'>
         <h1 className='text-4xl border-b-4 w-[90px] border-primary cursor-pointer mb-5'>Skills</h1>
         <div className='p-4 flex justify-around'>

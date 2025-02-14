@@ -1,5 +1,8 @@
 import React from 'react';
 import { AiOutlineMail, AiOutlineWhatsApp, AiOutlineLinkedin } from 'react-icons/ai';
+import Confetti from 'react-confetti';
+import { useWindowSize } from 'react-use';
+import { useState, useEffect } from 'react';
 
 const Contact = () => {
   const config = {
@@ -8,8 +11,22 @@ const Contact = () => {
     linkedIn: 'https://www.linkedin.com/in/madhankumarv24/'
   };
 
+    
+  const [isConfettiVisible, setIsConfettiVisible] = useState(true);
+  const { width, height } = useWindowSize();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsConfettiVisible(false);
+    }, 6000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+
   return (
     <section className='contact-section' id='contact'>
+      {isConfettiVisible && <Confetti width={width} height={height} numberOfPieces={400} />}
       <div className='flex flex-col items-center text-white p-10'>
         <h1 className='text-4xl border-b-4 border-primary w-[140px] mb-5 cursor-pointer'>Contact</h1>
         <p className='pb-5'>You want to discuss more in detail, please contact me.</p>
