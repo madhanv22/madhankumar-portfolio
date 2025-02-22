@@ -4,6 +4,8 @@ import projectImg3 from '../assets/project3.png';
 import projectImg4 from '../assets/project4.png';
 import projectImg5 from '../assets/project5.png';
 import projectImg6 from '../assets/project6.png';
+import projectImg7 from '../assets/project7.png';
+import projectImg8 from '../assets/project8.png';
 import Confetti from 'react-confetti';
 import { useWindowSize } from 'react-use';
 import { useState, useEffect } from 'react';
@@ -46,6 +48,18 @@ const Projects = () => {
         description: 'I created a User SignUp & Login Page using HTML and CSS and Javascript',
         link: 'https://madhanv22.github.io/signup-login/',
         SourceLink: 'https://github.com/madhanv22/signup-login'
+      },
+      {
+        image: projectImg7,
+        description: 'I created a Dashboard using React',
+        link: 'https://madhanv22.github.io/dashboard-frontend/',
+        SourceLink: 'https://github.com/madhanv22/dashboard-frontend'
+      },
+      {
+        image: projectImg8,
+        description: 'I created a Single Page Ecommerce Website using React',
+        link: 'https://madhanv22.github.io/single-page-ecommerce/',
+        SourceLink: 'https://github.com/madhanv22/single-page-ecommerce'
       },
     ]
   };
