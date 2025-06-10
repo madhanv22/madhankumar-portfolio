@@ -1,14 +1,14 @@
 import React from 'react';
 import ResumeImg from '../assets/resume.png';
-// import ResumePDF from '../assets/madhan.resume.pdf';
+// import ResumePDF from '../assets/madhankumar.resume.pdf.pdf';
 import Confetti from 'react-confetti';
 import { useWindowSize } from 'react-use';
 import { useState, useEffect } from 'react';
 
 const Resume = () => {
-  const config = {
-    resume: ResumePDF,
-  };
+  // const config = {
+  //   resume: ResumePDF,
+  // };
 
   const [isConfettiVisible, setIsConfettiVisible] = useState(true);
   const { width, height } = useWindowSize();
